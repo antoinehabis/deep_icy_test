@@ -13,10 +13,13 @@ model was trained on PanNuke Dataset with the TI loss (https://github.com/TopoXL
 
 The goal is to segment nuclei.
 
-There are 3 classes as output:
-    0: background pixels
-    1: nuclei contours
-    2: nuclei
+#### There are 3 classes as output:
+
+0: Background pixels
+
+1: Nuclei contours
+
+2: Nuclei
 
 ## Pre-processing:
 
