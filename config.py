@@ -1,11 +1,8 @@
 import os
 import pandas as pd
-from torchmetrics import F1Score, Recall, Precision
-import torch
+
 
 path_weights = 'weights'
-path_weights1 = 'weights1'
-
 path_click_project = '/home/ahabis/1-Click_project'
 path_pannuke = '/home/ahabis/sshfs/pannuke'
 path_split = '/home/ahabis/1-Click_project/split_train_val_test'
@@ -39,5 +36,4 @@ df_val = pd.read_csv(os.path.join(path_split, 'val_df.csv'), index_col = 0)
 parameters = {}
 parameters['dim'] = 256
 parameters['batch_size'] = 32
-parameters['S'] = 32
 parameters['lr'] = 1e-4

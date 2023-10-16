@@ -8,9 +8,10 @@ from dataloader import *
 import neptune 
 
 warnings.filterwarnings("ignore")
+
 final_loss = Finalloss()
 unet = UNet(3, 3)
-
+unet.load_state_dict(torch.load('weights'))
 run = neptune.init_run(
     project="aureliensihab/deep-icy",
     api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIwZjdkOTI0Yy1iOGJkLTQyMzEtYmEyOC05MmFmYmFhMWExNTMifQ==",
