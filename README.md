@@ -1,6 +1,6 @@
 # This Repository was created to test Deep ICY
 
-| ![alt text](./image_test.jpg)![alt text](./image_test_segmented.jpg) | 
+| ![alt text](test_images/image_test.jpg)![alt text](test_images/image_test_segmented.jpg) | 
 |:--:| 
 | *Image from PanNuke Dataset $~~~~~~~~~~~~~~~$    Nuclei segmentation result* |  
 
