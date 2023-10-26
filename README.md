@@ -2,17 +2,8 @@
 
 | ![alt text](test_images/image_test.jpg)![alt text](test_images/image_test_segmented.jpg) | 
 |:--:| 
-| *Image from PanNuke Dataset $~~~~~~~~~~~~~~~$    Nuclei segmentation result* |  
+| *Image from PanNuke Dataset &emsp;&emsp;&emsp;&emsp;&emsp; Nuclei segmentation result* |
 
- <!-- |![alt text](./image_test_segmented.jpg) |
-
- | *Segmentation result* | -->
-
-<!-- 
-![alt text](./image_test_segmented.jpg)
-|:--:|  -->
-
-<!-- | *Segmentation result* | -->
 
 The model used is a simple UNet with 3 channels as input and 3 channels as output.
 model was trained on PanNuke Dataset with the TI loss (https://github.com/TopoXLab/TopoInteraction):
