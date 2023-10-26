@@ -304,7 +304,7 @@ class Finalloss(torch.nn.Module):
         >>> output.backward()
     """
 
-    def __init__(self, dice_weight = 1., ti_weight = 1e-4) -> None:
+    def __init__(self, dice_weight = 1., ti_weight = 1e-3) -> None:
         
         super(Finalloss, self).__init__()
         

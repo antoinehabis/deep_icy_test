@@ -1,12 +1,18 @@
 # This Repository was created to test Deep ICY
 
-
-
-![alt text](./image_test.jpg)| 
+| ![alt text](./image_test.jpg)![alt text](./image_test_segmented.jpg) | 
 |:--:| 
-| *Image from the PanNuke Dataset* |
+| *Image from PanNuke Dataset $~~~~~~~~~~~~~~~$    Nuclei segmentation result* |  
+
+ <!-- |![alt text](./image_test_segmented.jpg) |
+
+ | *Segmentation result* | -->
+
+<!-- 
 ![alt text](./image_test_segmented.jpg)
-| *Segmentation result* |
+|:--:|  -->
+
+<!-- | *Segmentation result* | -->
 
 The model used is a simple UNet with 3 channels as input and 3 channels as output.
 model was trained on PanNuke Dataset with the TI loss (https://github.com/TopoXLab/TopoInteraction):

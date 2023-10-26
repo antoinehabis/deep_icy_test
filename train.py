@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 final_loss = Finalloss()
 unet = UNet(3, 3)
-unet.load_state_dict(torch.load('weights'))
+# unet.load_state_dict(torch.load('weights'))
 run = neptune.init_run(
     project="aureliensihab/deep-icy",
     api_token="eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiIwZjdkOTI0Yy1iOGJkLTQyMzEtYmEyOC05MmFmYmFhMWExNTMifQ==",
@@ -24,7 +24,7 @@ params = {"learning_rate":parameters["lr"],
 run["parameters"] = params
 
 optimizer = torch.optim.Adam(unet.parameters(), lr=parameters["lr"])
-scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)
+scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.95)
 
 
 def train(model, optimizer, train_dl, val_dl, epochs=100):
@@ -84,4 +84,4 @@ train(unet,
       optimizer,
       dataloaders["train"],
       dataloaders["val"],
-      epochs=100)
+      epochs=300)
